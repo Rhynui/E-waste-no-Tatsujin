@@ -1433,7 +1433,7 @@ def save_scores() -> None:
 
     for score, accuracy in scores:
         file.write("%i,%f\n" % (score, accuracy))
-    
+
     file.close()
 
 def result_init() -> None:

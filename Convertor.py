@@ -1,6 +1,6 @@
 """.osu File Format
 
-Retrived from: https://osu.ppy.sh/wiki/en/Game_mode/osu%21taiko
+Retrieved from: https://osu.ppy.sh/wiki/en/Game_mode/osu%21taiko
     The red notes refer to normal hit circle,
         large red notes needs a finish hitsound.
     The blue notes needs to have a whistle/clap hitsound on that hit circle,
@@ -8,7 +8,7 @@ Retrived from: https://osu.ppy.sh/wiki/en/Game_mode/osu%21taiko
     The sliders represents the long yellow note (also known as drumroll)
     The spinner represents a shaker.
 
-Retrived from: https://osu.ppy.sh/wiki/en/Client/File_formats/Osu_%28file_format%29
+Retrieved from: https://osu.ppy.sh/wiki/en/Client/File_formats/Osu_%28file_format%29
     Timing point syntax: time,beatLength,meter,sampleSet,sampleIndex,volume,uninherited,effects
         time (Integer): Start time of the timing section, in milliseconds from the beginning of the beatmap's audio. The end of the timing section is the next timing point's time (or never, if this is the last timing point).
         beatLength (Decimal): This property has two meanings:
