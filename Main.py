@@ -18,7 +18,7 @@ WINDOW_PERFECT = 80
 WINDOW_GREAT = 160
 WINDOW_EARLY_MISS = 200  # early miss is giving the player a miss judgment if they hit too early before the great hit window
 
-# define the maxiumum average interval between each hits during a drumroll (hitting the large object) to acheive each judgment
+# define the maximum average interval between each hits during a drumroll (hitting the large object) to achieve each judgment
 DRUMROLL_PERFECT_INTERVAL = 125
 DRUMROLL_GREAT_INTERVAL = 250
 
@@ -30,19 +30,19 @@ SCORE_DRUMROLL_HIT = 10
 # define the properties of score bonus
 # score bonus is a bonus score applied onto the base score for perfect and great once the player gets a certain amount of combo
 SCORE_BONUS_COMBO_STEP = 50  # the combo needed to increase the score bonus
-SCORE_BONUS_STEP = 0.2  # the  amount of score bonus increased everytime the step is reached
+SCORE_BONUS_STEP = 0.2  # the  amount of score bonus increased every time the step is reached
 
 # define the accuracy of each judgment in percentage
 # miss has an accuracy of 0%
 ACCURACY_PERFECT = 100
 ACCURACY_GREAT = 50
 
-# define the dimenion of the buttons in other pages
+# define the dimension of the buttons in other pages
 OPTION_WIDTH = 200
 OPTION_HEIGHT = 60
 
 SONG_PREVIEW_FADE_IN_DURATION = 1000  # the fade-in duration of the preview playback
-SONG_PREVIEW_END_WAIT = 1000  # the time in milliseconds to wait to start the song preview agian once the preview ends
+SONG_PREVIEW_END_WAIT = 1000  # the time in milliseconds to wait to start the song preview again once the preview ends
 
 # define the duration of animations
 DIP_TO_BLACK_ANIMATION_DURATION = 500
@@ -52,14 +52,14 @@ JUDGMENT_ANIMATION_DURATION = 150
 SONG_START_HOLD = 3000  # the wait in millisecond before the song's playback in game page
 SONG_END_HOLD = 2000  # the wait in millisecond to before the jumping to the result page after the song's play ends
 
-JUDGMENT_DISPLAY_DURATION = 2000  # the maxium number of millisecond a judgment stays on the screen
+JUDGMENT_DISPLAY_DURATION = 2000  # the maximum number of millisecond a judgment stays on the screen
 
 COMBO_BREAK_ANIMATION_SPEED = 0.1  # the speed of the combo number dropping after a combo break in the unit of combo per millisecond (0.1 means the combo number will go down by 1 every 10 ms)
 
-EXPLOSION_IMG_COUNT = 17  # the nubmer of frames in the explosion gif
+EXPLOSION_IMG_COUNT = 17  # the number of frames in the explosion gif
 EXPLOSION_ANIMATION_SPEED = 0.04  # the speed of the gif being display in frame per millisecond (0.04 frame per millisecond equals 40 fps)
 
-SPACING = 20  # the space between two surface/rectangles, used very often in the program to imporve formatting of the text shown on the screen
+SPACING = 20  # the space between two surface/rectangles, used very often in the program to improve formatting of the text shown on the screen
 
 MAX_SPEED = 20  # the maximum note that can be configured
 
@@ -74,8 +74,8 @@ SONG_SELECT_IMAGE_HEIGHT = 350  # the height of the song's cover image
 SONG_SELECT_IMAGE_CENTER_Y = 350  # the center y-coordinate of the song's cover image
 SONG_SELECT_ARROW_RECT_WIDTH = 80  # the width of the two arrows' hitboxes
 SONG_SELECT_ARROW_RECT_HEIGHT = 100  # the height of the two arrows' hitboxes
-SONG_SELECT_ARROW_IMG_SIDE_LENGTH = 80  # the side length of the arrows' images to scale to (the image is square) 
-SONG_SELECT_TITLE_CENTER_Y = 50  # the center y-coordinate of the song title tesxt
+SONG_SELECT_ARROW_IMG_SIDE_LENGTH = 80  # the side length of the arrows' images to scale to (the image is square)
+SONG_SELECT_TITLE_CENTER_Y = 50  # the center y-coordinate of the song title text
 SONG_SELECT_ARTIST_CENTER_Y = 80  # the center y-coordinate of the song artist text
 SONG_SELECT_INFO_TOP_Y = 110  # the top y-coordinate of the line of song information
 SONG_SELECT_INFO_SPACE = 30  # the space between each piece of song information text
@@ -84,15 +84,15 @@ SONG_SELECT_SCORE_RIGHT_X = 450  # the right x-coordinate of the song' high scor
 SONG_SELECT_ACCURACY_LEFT_X = 550  # the left x-coordinate of the song's best accuracy text
 
 # define dimensions and coordinates used in the game page
-GAME_PROGRESS_BAR_HEIGHT = 10  # the heigt of the prgress at the top of the screen
-GAME_JUDGMENT_LINE_X = 200  # the x-coordinate of the judgment line (where the sircles is)
+GAME_PROGRESS_BAR_HEIGHT = 10  # the height of the progress at the top of the screen
+GAME_JUDGMENT_LINE_X = 200  # the x-coordinate of the judgment line (where the circles is)
 GAME_OBJECT_HEIGHT = 60  # the height of the blue and red hit objects
 GAME_DRUMROLL_HEIGHT = 300  # the height of the drumroll
 GAME_GUIDE_CIRCLE_RADIUS = 15  # the radius of the 2 circle on the left
 GAME_RED_CENTER_Y = 250  # the center y-coordinate of the red lane
 GAME_BLUE_CENTER_Y = 450  # the center y-coordinate of the blue lane
 GAME_DRUMROLL_CENTER_Y = 350  # the center y-coordinate of the drumroll object
-GAME_EXPLOION_IMG_WIDTH = 80  # the width of the exlosion gif to scale to
+GAME_EXPLOSION_IMG_WIDTH = 80  # the width of the explosion gif to scale to
 GAME_DRUMROLL_EXPLOSION_RANGE = 80  # the possible explosion range from the center of the drumroll
 GAME_COMBO_TEXT_CENTER_Y = 60  # the center y-coordinate of the text "combo"
 GAME_COMBO_VALUE_CENTER_Y = 90  # The center y-coordinate of the combo value
@@ -141,7 +141,7 @@ SETTING_KEY_RECT_STROKE_WIDTH = 3
 # stores all keys that the program recognizes
 # the first column is the pygame id of each keys (e.g. pygame.K_0 is 48)
 # the second column is the character of each keys (this doesn't take shift into consideration)
-TYPABLE_KEYS = (
+TYPEABLE_KEYS = (
     (39, "'"),
     (44, ','),
     (45, '-'),
@@ -195,11 +195,11 @@ TYPABLE_KEYS = (
 DIFFICULTY_BEGINNER = 0
 DIFFICULTY_ADVANCED = 1
 
-# for the direction of the sliding animtion in the song-select page
+# for the direction of the sliding animation in the song-select page
 SLIDE_LEFT = 0
 SLIDE_RIGHT = 1
 
-# for the nnote types in the game
+# for the note types in the game
 TYPE_RED = 0
 TYPE_BLUE = 1
 TYPE_DRUMROLL = 2
@@ -210,9 +210,9 @@ JUDGMENT_PERFECT = 1
 JUDGMENT_GREAT = 2
 JUDGMENT_MISS = 3
 
-SUBJUDGMENT_NONE = 0
-SUBJUDGMENT_EARLY = 1
-SUBJUDGMENT_LATE = 2
+JUDGMENT_NONE = 4
+JUDGMENT_EARLY = 5
+JUDGMENT_LATE = 6
 
 # define states for each page
 PAGE_EXIT = 0
@@ -232,7 +232,7 @@ FONT_SONG_TITLE = font.Font("Fonts/Arial-True-Unicode-Bold.ttf", 32)
 FONT_SONG_ARTIST = font.Font("Fonts/Arial-True-Unicode.ttf", 20)
 FONT_SONG_INFO = font.Font("Fonts/ARIAL.TTF", 16)
 FONT_JUDGMENT = font.Font("Fonts/ARIALBD.TTF", 28)
-FONT_SUBJUDGMENT = font.Font("Fonts/ARIALBD.TTF", 12)
+FONT_SUB_JUDGMENT = font.Font("Fonts/ARIALBD.TTF", 12)
 FONT_COMBO_TEXT = font.Font("Fonts/ARIAL.TTF", 12)
 FONT_COMBO_VALUE = font.Font("Fonts/ARIAL.TTF", 32)
 FONT_SCORE = font.Font("Fonts/ARIAL.TTF", 20)
@@ -241,7 +241,7 @@ FONT_RESULT_TITLE = font.Font("Fonts/Arial-True-Unicode-Bold.ttf", 32)
 FONT_RESULT_ARTIST = font.Font("Fonts/Arial-True-Unicode.ttf", 24)
 FONT_RESULT_FIELD = font.Font("Fonts/ARIALBD.TTF", 20)
 FONT_RESULT_VALUE = font.Font("Fonts/ARIAL.TTF", 20)
-FONT_SETIING_PLUS_MINUS = font.Font("Fonts/ARIAL.TTF", 28)
+FONT_SETTING_PLUS_MINUS = font.Font("Fonts/ARIAL.TTF", 28)
 FONT_SETTING_FIELD = font.Font("Fonts/ARIALBD.TTF", 24)
 FONT_SETTING_VALUE = font.Font("Fonts/ARIAL.TTF", 20)
 FONT_HELP = font.Font("Fonts/ARIAL.TTF", 16)
@@ -252,7 +252,7 @@ COLOR_WHITE = (255, 255, 255)
 COLOR_FPS = (255, 255, 255)
 COLOR_MENU_BG = (51, 51, 51)
 COLOR_SONG_SELECT_BEGINNER_BG = (17, 70, 143)  # blue
-COLOR_SONG_SELECT_ADVANDED_BG = (255, 36, 66)  # red
+COLOR_SONG_SELECT_ADVANCED_BG = (255, 36, 66)  # red
 COLOR_TEXT = (255, 255, 255)
 COLOR_MENU_BUTTON_FILL = (255, 36, 66)  # red
 COLOR_MENU_BUTTON_HOVER = (61, 178, 255)  # blue
@@ -264,8 +264,8 @@ COLOR_SONG_PROGRESS_BAR = (204, 204, 204)
 COLOR_JUDGMENT_PERFECT = (247, 251, 118)  # yellow
 COLOR_JUDGMENT_GREAT = (147, 237, 142)  # green
 COLOR_JUDGMENT_MISS = (250, 85, 85)  # red
-COLOR_SUBJUDGMENT_EARLY = (33, 146, 255)  # blue
-COLOR_SUBJUDGMENT_LATE = (255, 30, 0)  # red
+COLOR_JUDGMENT_EARLY = (33, 146, 255)  # blue
+COLOR_JUDGMENT_LATE = (255, 30, 0)  # red
 COLOR_NEW_BEST = (255, 234, 32)  # yellow
 COLOR_SLIDER = (255, 255, 255)
 COLOR_SLIDER_FILL = (61, 178, 255)  # blue
@@ -276,7 +276,7 @@ COLOR_KEY_RECT_STROKE = (255, 255, 255)
 
 # define alphas (value range: 0-255)
 ALPHA_BUTTON_HOVER_FILL = 128  # the alpha of the button's fill when the mouse hovers over it
-ALPHA_IMG_BG_DIMM = 180  # the alpha of the surface that dim the background in the result page
+ALPHA_IMG_BG_DIM = 180  # the alpha of the surface that dim the background in the result page
 
 # define custom events
 EVENT_REPORT_FPS = pygame.USEREVENT + 0
@@ -293,7 +293,7 @@ event_queue = list()
 
 # define two surfaces to temporarily hold the drawn screen
 # in each loop, shapes and surfaces are directly drawn onto screen_draw_temp
-# the drawn screen is then transfered to screen_draw and onto the main screen
+# the drawn screen is then transferred to screen_draw and onto the main screen
 # this avoids displaying a half-finished page on a plane
 screen_draw = Surface(SCREEN_SIZE)
 screen_draw_temp = Surface(SCREEN_SIZE)
@@ -302,25 +302,25 @@ screen_draw_temp = Surface(SCREEN_SIZE)
 mouse_x = -1
 mouse_y = -1
 
-# intialize the surface used to transition between pages
+# initialize the surface used to transition between pages
 dip_to_black_mask_surface = Surface(SCREEN_SIZE)
 dip_to_black_mask_surface.set_alpha(0)
 
-# define global varibles about the transition
+# define global variables about the transition
 dip_to_black_animation = False
 dip_to_black_animation_start_time = int()
 dip_to_black_animation_end_page_init_function = None
 dip_to_black_animation_end_page_init_function_argument = None
 
-# define global varibles for the fading out transition after fading into black
+# define global variables for the fading out transition after fading into black
 dip_to_black_reversed_animation = False
 dip_to_black_reversed_animation_start_time = int()
 
-# defines global varibles to store the renders of the fps information so they don't need to be rendered multiple times
+# defines global variables to store the renders of the fps information so they don't need to be rendered multiple times
 fps_display = FONT_FPS.render("FPS 0  |  Frametime 0ms", True, COLOR_FPS).convert_alpha()
 fps_display_width, fps_display_height = fps_display.get_size()
 
-# stores the three lines of the game title 
+# stores the three lines of the game title
 game_title = (
     FONT_TITLE.render("E-waste", True, COLOR_TEXT),
     FONT_TITLE.render("no", True, COLOR_TEXT),
@@ -354,7 +354,8 @@ song_list = list()
 song_count = int()
 song_selected_index = int()
 song_select_bg_color = tuple()
-# for the sliding animation
+
+# global variables for the sliding animation
 song_slide_animation = False
 song_slide_animation_start_time = int()
 song_slide_direction = int()
@@ -409,10 +410,10 @@ note_speed = int()  # the speed of the note (e-waste) move from left to right of
 hit_objects_red = list()  # stores all the red hit object in a chart
 hit_objects_blue = list()  # stores all the blue hit object in a chart
 hit_objects_drumroll = list()  # stores all the drumroll in a chart
-drumroll_missed = list()  # stores all the missed drumroll in a chart (missed drumroll doesn't dissapear once its hit window ends unlike the other hit objects)
+drumroll_missed = list()  # stores all the missed drumroll in a chart (missed drumroll doesn't disappear once its hit window ends unlike the other hit objects)
 explosion_queue = list()  # the queue for storing all the ongoing explosion effects that need to be displayed
 
-# the image for each hit objecs
+# the image for each hit objects
 red_img = image.load("Red.png").convert_alpha()
 width, height = red_img.get_size()
 red_img_height = GAME_OBJECT_HEIGHT
@@ -451,11 +452,11 @@ judgment_animation_start_time = int()
 judgment_text = None
 judgment_text_width = int()
 judgment_text_height = int()
-subjudgment_text = None
-subjudgment_text_width = int()
-subjudgment_text_height = int()
+early_late_text = None
+early_late_text_width = int()
+early_late_text_height = int()
 
-# define global varibles used to store scores
+# define global variables used to store scores
 combo = int()
 max_combo = int()
 score = int()
@@ -491,15 +492,15 @@ result_great_text_width, result_great_text_height = result_great_text.get_size()
 result_miss_text = FONT_RESULT_FIELD.render("MISS", True, COLOR_JUDGMENT_MISS)
 result_miss_text_width, result_miss_text_height = result_miss_text.get_size()
 
-result_early_text = FONT_RESULT_FIELD.render("Early", True, COLOR_SUBJUDGMENT_EARLY)
+result_early_text = FONT_RESULT_FIELD.render("Early", True, COLOR_JUDGMENT_EARLY)
 result_early_text_width, result_early_text_height = result_early_text.get_size()
 
-result_late_text = FONT_RESULT_FIELD.render("Late", True, COLOR_SUBJUDGMENT_LATE)
+result_late_text = FONT_RESULT_FIELD.render("Late", True, COLOR_JUDGMENT_LATE)
 result_late_text_width, result_late_text_height = result_late_text.get_size()
 
 # initialize the surface used to dim the background down
 result_bg_mask_surface = Surface(SCREEN_SIZE)
-result_bg_mask_surface.set_alpha(ALPHA_IMG_BG_DIMM)
+result_bg_mask_surface.set_alpha(ALPHA_IMG_BG_DIM)
 
 # global variables waited to be initialized to store text used in the result page
 result_bg = None
@@ -550,15 +551,15 @@ result_late_count_text_height = int()
 volume_thumb_center_x = int()  # the x-coordinate of the thumb of the volume slider
 offset_thumb_center_x = int()  # the x-coordinate of the thumb of the offset slider
 volume_slider_dragging = bool()  # if the user is dragging the volume slider
-offset_slider_dragging = bool()  # if the user is draggin the offset slider
+offset_slider_dragging = bool()  # if the user is dragging the offset slider
 keybind_change = bool()  # if the user is modifying a keybind
 key_index = int()  # the keybind the user is modifying
 
 # render text used in the setting page
-setting_plus_text = FONT_SETIING_PLUS_MINUS.render('+', True, COLOR_TEXT)
+setting_plus_text = FONT_SETTING_PLUS_MINUS.render('+', True, COLOR_TEXT)
 setting_plus_text_width, setting_plus_text_height = setting_plus_text.get_size()
 
-setting_minus_text = FONT_SETIING_PLUS_MINUS.render('-', True, COLOR_TEXT)
+setting_minus_text = FONT_SETTING_PLUS_MINUS.render('-', True, COLOR_TEXT)
 setting_minus_text_width, setting_minus_text_height = setting_minus_text.get_size()
 
 setting_volume_text = FONT_SETTING_FIELD.render("Volume", True, COLOR_TEXT)
@@ -604,7 +605,7 @@ setting_speed_value_text = None
 setting_speed_value_text_width = int()
 setting_speed_value_text_height = int()
 
-# the rectangualar hitbox of some objects in the setting page
+# the rectangular hitbox of some objects in the setting page
 setting_volume_slider_rect = Rect(SETTING_SLIDER_LEFT_X-SETTING_SLIDER_THUMB_RADIUS, SETTING_VOLUME_BAR_CENTER_Y-SETTING_SLIDER_THUMB_RADIUS, SETTING_SLIDER_LENGTH+SETTING_SLIDER_THUMB_RADIUS*2, SETTING_SLIDER_THUMB_RADIUS*2)
 setting_offset_slider_rect = Rect(SETTING_SLIDER_LEFT_X-SETTING_SLIDER_THUMB_RADIUS, SETTING_OFFSET_BAR_CENTER_Y-SETTING_SLIDER_THUMB_RADIUS, SETTING_SLIDER_LENGTH+SETTING_SLIDER_THUMB_RADIUS*2, SETTING_SLIDER_THUMB_RADIUS*2)
 
@@ -617,7 +618,7 @@ tutorial_text = (
     FONT_HELP.render("Press \"j\" or \"k\" to eliminate the blue e-waste.", True, COLOR_TEXT),
     FONT_HELP.render("Hit the keys once the e-waste reaches the circles on the left.", True, COLOR_TEXT),
     FONT_HELP.render("Smash \"d\", \"f\", \"j\", and \"k\" as fast as you can", True, COLOR_TEXT),
-    FONT_HELP.render("when you see the e-easte pile reaches the circles.", True, COLOR_TEXT),
+    FONT_HELP.render("when you see the e-waste pile reaches the circles.", True, COLOR_TEXT),
     FONT_HELP.render("Get a high score by eliminating the e-waste accurately.", True, COLOR_TEXT),
     FONT_HELP.render("Hit the e-waste as close to the circles as possible,", True, COLOR_TEXT),
     FONT_HELP.render("and not letting any e-waste go past the screen.", True, COLOR_TEXT),
@@ -661,9 +662,9 @@ def ease_out_back(x: float) -> float:
     C3 = C1 + 1
     return 1 + C3 * (x - 1) ** 3 + C1 * (x - 1) ** 2
 
-# fucntions used throughout the program
+# functions used throughout the program
 def dip_to_black_animation_init(init_func=None, arg=None) -> None:
-    """The initlization of the dip to black animation. The page initialzation function (init_func) will be called once the dip to black anmimation has finished."""
+    """The initialization of the dip to black animation. The page initialization function (init_func) will be called once the dip to black animation has finished."""
     global dip_to_black_animation, dip_to_black_animation_start_time, dip_to_black_animation_end_page_init_function, dip_to_black_animation_end_page_init_function_argument
 
     dip_to_black_animation = True
@@ -672,7 +673,7 @@ def dip_to_black_animation_init(init_func=None, arg=None) -> None:
     dip_to_black_animation_end_page_init_function_argument = arg
 
 def dip_to_black_animation_exit() -> None:
-    """The exit of the dip to black animation ends. Also setting up the next animation and calling the page intialization function."""
+    """The exit of the dip to black animation ends. Also setting up the next animation and calling the page initialization function."""
     global dip_to_black_animation, dip_to_black_mask_surface, page, dip_to_black_animation_end_page_init_function, dip_to_black_animation_end_page_init_function_argument
 
     dip_to_black_animation = False
@@ -687,7 +688,7 @@ def dip_to_black_animation_exit() -> None:
     dip_to_black_reversed_animation_init()
 
 def dip_to_black_reversed_animation_init() -> None:
-    """The initialization of the fade out animation. This is called after the initiazation function of a page if there is one. This way the initialization happens during a black screen, so the user won't notice the stutter of loading."""
+    """The initialization of the fade out animation. This is called after the initialization function of a page if there is one. This way the initialization happens during a black screen, so the user won't notice the stutter of loading."""
     global dip_to_black_reversed_animation, dip_to_black_reversed_animation_start_time
 
     dip_to_black_reversed_animation = True
@@ -701,20 +702,20 @@ def dip_to_black_reversed_animation_exit() -> None:
     dip_to_black_mask_surface.set_alpha(0)
 
 def find_key(key: int) -> int:
-    """ A binary search to find the unicode of a key inside TYPABLE_KEYS using Pygame ID, and return the index. The returned index is -1 when the key is not found."""
+    """ A binary search to find the unicode of a key inside TYPEABLE_KEYS using Pygame ID, and return the index. The returned index is -1 when the key is not found."""
     lo = 0
-    hi = len(TYPABLE_KEYS) - 1
+    hi = len(TYPEABLE_KEYS) - 1
     while hi - lo > 1:
         mid = (lo+hi) // 2
-        if TYPABLE_KEYS[mid][0] == key:
+        if TYPEABLE_KEYS[mid][0] == key:
             return mid
-        elif TYPABLE_KEYS[mid][0] < key:
+        elif TYPEABLE_KEYS[mid][0] < key:
             lo = mid + 1
         else:
             hi = mid - 1
-    if TYPABLE_KEYS[hi][0] == key:
+    if TYPEABLE_KEYS[hi][0] == key:
         return hi
-    elif TYPABLE_KEYS[lo][0] == key:
+    elif TYPEABLE_KEYS[lo][0] == key:
         return lo
     else:
         return -1
@@ -770,7 +771,7 @@ def draw_menu() -> int:
         if mouse_clicked:
             dip_to_black_animation_init()
             return PAGE_EXIT
-    
+
     # draw the text on these buttons
     screen_draw_temp.blit(play_beginner_text, (MENU_OPTION_CENTER_X-play_beginner_text_width//2, 100-text_height//2, play_beginner_text_width, text_height))
     screen_draw_temp.blit(play_advanced_text, (MENU_OPTION_CENTER_X-play_advanced_text_width//2, 200-text_height//2, play_advanced_text_width, text_height))
@@ -784,7 +785,7 @@ def draw_menu() -> int:
 
 # functions used in the song-select page
 def draw_song_screen(song_screen: Surface, song_index: int) -> None:
-    """Draw the screen for one song. By drawing multiple of these, I can acheive the sliding animation."""
+    """Draw the screen for one song. By drawing multiple of these, I can achieve the sliding animation."""
     song_screen.fill(song_select_bg_color)
 
     song_info = song_list[song_index]
@@ -853,7 +854,7 @@ def draw_song_screen(song_screen: Surface, song_index: int) -> None:
     song_screen.blit(accuracy, (SONG_SELECT_ACCURACY_LEFT_X, SONG_SELECT_SCORE_TOP_Y))
 
 def song_select_music_init() -> None:
-    """Intialize and play the music from the set preview point."""
+    """Initialize and play the music from the set preview point."""
     mixer.music.load("Songs/%s/audio.mp3" % (song_list[song_selected_index][1]))
     mixer.music.set_volume(song_volume)
     mixer.music.set_endevent(EVENT_PREVIEW_END)
@@ -861,7 +862,7 @@ def song_select_music_init() -> None:
     mixer.music.set_pos(int(song_list[song_selected_index][7])/1000)
 
 def song_select_init(difficulty: int) -> None:
-    """Initialize variable for the song selet page."""
+    """Initialize variable for the song select page."""
     global song_list, song_slide_animation, song_select_bg_color, song_count, song_selected_index, previous_song_screen, current_song_screen, next_song_screen
 
     song_list = []
@@ -873,7 +874,7 @@ def song_select_init(difficulty: int) -> None:
         song_select_bg_color = COLOR_SONG_SELECT_BEGINNER_BG
     else:
         song_list_file = open("Songs_advanced.csv", 'r', encoding="UTF-8")
-        song_select_bg_color = COLOR_SONG_SELECT_ADVANDED_BG
+        song_select_bg_color = COLOR_SONG_SELECT_ADVANCED_BG
     song_list_file.readline()
 
     # create a list of song information from the file using '|' as separator
@@ -972,7 +973,7 @@ def draw_song_select() -> int:
             # wait a set amount of time before playing the preview again
             time.set_timer(EVENT_PREVIEW_WAIT_END, SONG_PREVIEW_END_WAIT, 1)
         elif e[0] == EVENT_PREVIEW_WAIT_END:
-            # play the preview agin once the wait is over
+            # play the preview again once the wait is over
             mixer.music.play(fade_ms=SONG_PREVIEW_FADE_IN_DURATION)
             mixer.music.set_pos(int(song_list[song_selected_index][7])/1000)
 
@@ -999,7 +1000,7 @@ def draw_song_select() -> int:
 
     if not song_slide_animation:
         screen_draw_temp.blit(current_song_screen, (0, 0))
-    
+
         # draw arrows and option buttons
         if left_arrow_rect.collidepoint(mouse_x, mouse_y):
             if mouse_clicked:
@@ -1068,7 +1069,7 @@ def game_init() -> None:
     song.set_volume(song_volume)
     song_duration = int(song.get_length() * 1000)
 
-    # initalize a bunch of variables
+    # initialize a bunch of variables
     song_restartable = True
 
     combo = 0
@@ -1087,11 +1088,11 @@ def game_init() -> None:
     hit_objects_drumroll = []
     drumroll_missed = []
     explosion_queue = []
- 
+
     combo_animation = False
     judgment_animation = False
 
-    # initlaize text for combo and score
+    # initialize text for combo and score
     combo_value_text = FONT_COMBO_VALUE.render('0', True, COLOR_TEXT)
     combo_value_text_width, combo_value_text_height = combo_value_text.get_size()
 
@@ -1117,11 +1118,11 @@ def game_init() -> None:
         else:
             hit_object[2] += offset
             duration = hit_object[2] - hit_object[1]
-            hit_objects_drumroll.append(hit_object[1:3]+[duration//DRUMROLL_PERFECT_INTERVAL, duration//DRUMROLL_GREAT_INTERVAL])  # add two additional value that stores the minimum number of hits to the drumroll to acheive a prefect or great judgment
+            hit_objects_drumroll.append(hit_object[1:3]+[duration//DRUMROLL_PERFECT_INTERVAL, duration//DRUMROLL_GREAT_INTERVAL])  # add two additional value that stores the minimum number of hits to the drumroll to achieve a prefect or great judgment
         del hit_object
     hit_objects_file.close()
 
-    # set a time to signal the song's playpack
+    # set a time to signal the song's playback
     time.set_timer(EVENT_SONG_START, SONG_START_HOLD, 1)
     song_start_time = get_time_ms() + SONG_START_HOLD
 
@@ -1141,43 +1142,43 @@ def hit_judge(hit_type: int, hit_time: int) -> tuple[int, int]:
         score += SCORE_DRUMROLL_HIT
         score_value_text = FONT_SCORE.render(str(score), True, COLOR_TEXT)
         score_value_text_width, score_value_text_height = score_value_text.get_size()
-        return JUDGMENT_NONE, SUBJUDGMENT_NONE
-    
+        return JUDGMENT_NONE, JUDGMENT_NONE
+
     # if not, determine the judgment
     if hit_type == TYPE_RED:
         if len(hit_objects_red) > 0:
             object_time = hit_objects_red[0]
         else:
-            return JUDGMENT_NONE, SUBJUDGMENT_NONE
+            return JUDGMENT_NONE, JUDGMENT_NONE
     else:
         if len(hit_objects_blue) > 0:
             object_time = hit_objects_blue[0]
         else:
-            return JUDGMENT_NONE, SUBJUDGMENT_NONE
+            return JUDGMENT_NONE, JUDGMENT_NONE
     if hit_time < object_time:
         diff = object_time - hit_time
         if diff <= WINDOW_MAX_PERFECT:
-            return JUDGMENT_PERFECT, SUBJUDGMENT_NONE
+            return JUDGMENT_PERFECT, JUDGMENT_NONE
         elif diff <= WINDOW_PERFECT:
-            return JUDGMENT_PERFECT, SUBJUDGMENT_EARLY
+            return JUDGMENT_PERFECT, JUDGMENT_EARLY
         elif diff <= WINDOW_GREAT:
-            return JUDGMENT_GREAT, SUBJUDGMENT_EARLY
+            return JUDGMENT_GREAT, JUDGMENT_EARLY
         elif diff <= WINDOW_EARLY_MISS:
-            return JUDGMENT_MISS, SUBJUDGMENT_EARLY
+            return JUDGMENT_MISS, JUDGMENT_EARLY
         else:
-            return JUDGMENT_NONE, SUBJUDGMENT_NONE
+            return JUDGMENT_NONE, JUDGMENT_NONE
     else:
         diff = hit_time - object_time
         if diff <= WINDOW_MAX_PERFECT:
-            return JUDGMENT_PERFECT, SUBJUDGMENT_NONE
+            return JUDGMENT_PERFECT, JUDGMENT_NONE
         elif diff <= WINDOW_PERFECT:
-            return JUDGMENT_PERFECT, SUBJUDGMENT_LATE
+            return JUDGMENT_PERFECT, JUDGMENT_LATE
         else:
-            return JUDGMENT_GREAT, SUBJUDGMENT_LATE
+            return JUDGMENT_GREAT, JUDGMENT_LATE
 
-def add_judgment(judgment: int, subjudgment: int, time_elapsed: int) -> None:
+def add_judgment(judgment: int, early_late: int, time_elapsed: int) -> None:
     """Initialize the judgment and combo animation. Modify combo, accuracy, scores, etc. based on the judgment."""
-    global combo, max_combo, score, total_accuracy, count_perfect, count_great, count_miss, count_early, count_late, judgment_text, judgment_text_width, judgment_text_height, subjudgment_text, subjudgment_text_width, subjudgment_text_height, judgment_animation, judgment_animation_start_time, combo_value_text, combo_value_text_width, combo_value_text_height, combo_animation, combo_animation_start_time, combo_animation_start_combo, score_value_text, score_value_text_width, score_value_text_height
+    global combo, max_combo, score, total_accuracy, count_perfect, count_great, count_miss, count_early, count_late, judgment_text, judgment_text_width, judgment_text_height, early_late_text, early_late_text_width, early_late_text_height, judgment_animation, judgment_animation_start_time, combo_value_text, combo_value_text_width, combo_value_text_height, combo_animation, combo_animation_start_time, combo_animation_start_combo, score_value_text, score_value_text_width, score_value_text_height
 
     if judgment == JUDGMENT_PERFECT:
         judgment_text = FONT_JUDGMENT.render("PERFECT", True, COLOR_JUDGMENT_PERFECT)
@@ -1206,19 +1207,19 @@ def add_judgment(judgment: int, subjudgment: int, time_elapsed: int) -> None:
             combo = 0
 
     judgment_text_width, judgment_text_height = judgment_text.get_size()
-    
-    if subjudgment == SUBJUDGMENT_NONE:
-        subjudgment_text = FONT_SUBJUDGMENT.render("", True, COLOR_WHITE)
-    elif subjudgment == SUBJUDGMENT_EARLY:
-        subjudgment_text = FONT_SUBJUDGMENT.render("EARLY", True, COLOR_SUBJUDGMENT_EARLY)
+
+    if early_late == JUDGMENT_NONE:
+        early_late_text = FONT_SUB_JUDGMENT.render("", True, COLOR_WHITE)
+    elif early_late == JUDGMENT_EARLY:
+        early_late_text = FONT_SUB_JUDGMENT.render("EARLY", True, COLOR_JUDGMENT_EARLY)
         if judgment != JUDGMENT_MISS:
             count_early += 1
     else:
-        subjudgment_text = FONT_SUBJUDGMENT.render("LATE", True, COLOR_SUBJUDGMENT_LATE)
+        early_late_text = FONT_SUB_JUDGMENT.render("LATE", True, COLOR_JUDGMENT_LATE)
         if judgment != JUDGMENT_MISS:
             count_late += 1
 
-    subjudgment_text_width, subjudgment_text_height = subjudgment_text.get_size()
+    early_late_text_width, early_late_text_height = early_late_text.get_size()
 
     combo_value_text = FONT_COMBO_VALUE.render(str(combo), True, COLOR_TEXT)
     combo_value_text_width, combo_value_text_height = combo_value_text.get_size()
@@ -1252,27 +1253,27 @@ def draw_game() -> int:
                 key_index = find_key(e[1])
                 if key_index == -1:
                     continue
-                key_pressed = TYPABLE_KEYS[key_index][1]
+                key_pressed = TYPEABLE_KEYS[key_index][1]
                 if key_pressed in keys[0:2]:
-                    judgment, subjudgment = hit_judge(TYPE_RED, song_time_elapsed)
+                    judgment, early_late = hit_judge(TYPE_RED, song_time_elapsed)
                     if judgment != JUDGMENT_NONE:
-                        if judgment != JUDGMENT_MISS or subjudgment != SUBJUDGMENT_EARLY:
+                        if judgment != JUDGMENT_MISS or early_late != JUDGMENT_EARLY:
                             if play_hitsound:
                                 hitsound.stop()
                                 hitsound.play()
                             explosion_queue.append([int((hit_objects_red[0]-song_time_elapsed)*note_speed)+GAME_JUDGMENT_LINE_X, GAME_RED_CENTER_Y, song_time_elapsed])
                         del hit_objects_red[0]
-                        add_judgment(judgment, subjudgment, song_time_elapsed)
+                        add_judgment(judgment, early_late, song_time_elapsed)
                 elif key_pressed in keys[2:4]:
-                    judgment, subjudgment = hit_judge(TYPE_BLUE, song_time_elapsed)
+                    judgment, early_late = hit_judge(TYPE_BLUE, song_time_elapsed)
                     if judgment != JUDGMENT_NONE:
-                        if judgment != JUDGMENT_MISS or subjudgment != SUBJUDGMENT_EARLY:
+                        if judgment != JUDGMENT_MISS or early_late != JUDGMENT_EARLY:
                             if play_hitsound:
                                 hitsound.stop()
                                 hitsound.play()
                             explosion_queue.append([int((hit_objects_blue[0]-song_time_elapsed)*note_speed)+GAME_JUDGMENT_LINE_X, GAME_BLUE_CENTER_Y, song_time_elapsed])
                         del hit_objects_blue[0]
-                        add_judgment(judgment, subjudgment, song_time_elapsed)
+                        add_judgment(judgment, early_late, song_time_elapsed)
         elif e[0] == EVENT_SONG_START:
             song.play()
             time.set_timer(EVENT_SONG_END, song_duration, 1)
@@ -1284,7 +1285,7 @@ def draw_game() -> int:
             game_exit()
             dip_to_black_animation_init(result_init)
             return PAGE_RESULT
-    
+
     screen_draw_temp.fill(COLOR_BLACK)
 
     # draw the 2 guide circles
@@ -1324,13 +1325,13 @@ def draw_game() -> int:
                 judgment_display = transform.smoothscale(judgment_text, (judgment_display_width, judgment_display_height))
                 screen_draw_temp.blit(judgment_display, (500-judgment_display_width//2, GAME_JUDGMENT_CENTER_Y-judgment_display_height))
 
-                subjudgment_display_width = int(subjudgment_text_width * scale)
-                subjudgment_display_height = int(subjudgment_text_height * scale)
-                subjudgment_display = transform.smoothscale(subjudgment_text, (subjudgment_display_width, subjudgment_display_height))
-                screen_draw_temp.blit(subjudgment_display, (500-subjudgment_display_width//2, GAME_JUDGMENT_CENTER_Y))
+                early_late_display_width = int(early_late_text_width * scale)
+                early_late_display_height = int(early_late_text_height * scale)
+                early_late_display = transform.smoothscale(early_late_text, (early_late_display_width, early_late_display_height))
+                screen_draw_temp.blit(early_late_display, (500-early_late_display_width//2, GAME_JUDGMENT_CENTER_Y))
             else:
                 screen_draw_temp.blit(judgment_text, (500-judgment_text_width//2, GAME_JUDGMENT_CENTER_Y-judgment_text_height))
-                screen_draw_temp.blit(subjudgment_text, (500-subjudgment_text_width//2, GAME_JUDGMENT_CENTER_Y))
+                screen_draw_temp.blit(early_late_text, (500-early_late_text_width//2, GAME_JUDGMENT_CENTER_Y))
 
     # draw the score text
     screen_draw_temp.blit(score_text, (SCREEN_SIZE[0]-score_text_width-SPACING-score_value_text_width-GAME_SCORE_TOP_RIGHT_MARGIN, GAME_SCORE_TOP_RIGHT_MARGIN))
@@ -1342,25 +1343,25 @@ def draw_game() -> int:
 
     # determine judgments of drumroll objects that passed their hit window
     while len(hit_objects_drumroll) > 0 and song_time_elapsed > hit_objects_drumroll[0][1]:
-        # check if the values are less than 0; if yes, it means the user acheived the corresponding judgment
+        # check if the values are less than 0; if yes, it means the user achieved the corresponding judgment
         if hit_objects_drumroll[0][2] <= 0:
-            add_judgment(JUDGMENT_PERFECT, SUBJUDGMENT_NONE, song_time_elapsed)
+            add_judgment(JUDGMENT_PERFECT, JUDGMENT_NONE, song_time_elapsed)
         elif hit_objects_drumroll[0][3] <= 0:
-            add_judgment(JUDGMENT_GREAT, SUBJUDGMENT_NONE, song_time_elapsed)
+            add_judgment(JUDGMENT_GREAT, JUDGMENT_NONE, song_time_elapsed)
         else:
-            add_judgment(JUDGMENT_MISS, SUBJUDGMENT_NONE, song_time_elapsed)
+            add_judgment(JUDGMENT_MISS, JUDGMENT_NONE, song_time_elapsed)
             drumroll_missed.append(hit_objects_drumroll[0])
 
         del hit_objects_drumroll[0]
 
     # delete any red hit object that passed its hit window
     while len(hit_objects_red) > 0 and song_time_elapsed-hit_objects_red[0] > WINDOW_GREAT:
-        add_judgment(JUDGMENT_MISS, SUBJUDGMENT_LATE, song_time_elapsed)
+        add_judgment(JUDGMENT_MISS, JUDGMENT_LATE, song_time_elapsed)
         del hit_objects_red[0]
 
     # delete any blue hit object that passed its hit window
     while len(hit_objects_blue) > 0 and song_time_elapsed-hit_objects_blue[0] > WINDOW_GREAT:
-        add_judgment(JUDGMENT_MISS, SUBJUDGMENT_LATE, song_time_elapsed)
+        add_judgment(JUDGMENT_MISS, JUDGMENT_LATE, song_time_elapsed)
         del hit_objects_blue[0]
 
     # draw any drumroll the user missed but still should be visible in the view window
@@ -1394,7 +1395,7 @@ def draw_game() -> int:
     # delete any explosion object that passed its animation period
     while len(explosion_queue) > 0 and int((song_time_elapsed-explosion_queue[0][2])*EXPLOSION_ANIMATION_SPEED) >= EXPLOSION_IMG_COUNT:
         del explosion_queue[0]
-    
+
     # draw the explosion effect
     for explosion in explosion_queue:
         screen_draw_temp.blit(explosion_img[int((song_time_elapsed-explosion[2])*EXPLOSION_ANIMATION_SPEED)], (explosion[0]-explosion_img_width//2, explosion[1]-explosion_img_height//2))
@@ -1453,7 +1454,7 @@ def result_init() -> None:
     if accuracy > scores[song_id][1]:
         scores[song_id][1] = accuracy
         update = True
-    
+
     if update:
         save_scores()
         draw_song_screen(current_song_screen, song_selected_index)
@@ -1599,7 +1600,7 @@ def volume_slider_exit() -> None:
 
     volume_slider_dragging = False
     volume_thumb_center_x = song_volume_percent * SETTING_SLIDER_LENGTH // 100 + SETTING_SLIDER_LEFT_X
-    
+
     save_settings()
 
 def offset_slider_exit() -> None:
@@ -1618,7 +1619,7 @@ def keybind_change_exit(new_key: str = "") -> None:
 
     if not keybind_change:
         return
-    
+
     keybind_change = False
     keys[key_index] = new_key
 
@@ -1628,7 +1629,7 @@ def draw_setting() -> int:
     global song_volume_percent, offset, note_speed_int, play_hitsound, display_fps, volume_slider_dragging, volume_thumb_center_x, offset_slider_dragging, offset_thumb_center_x, keybind_change, key_index, setting_volume_value_text, setting_volume_value_text_width, setting_volume_value_text_height, setting_offset_value_text, setting_offset_value_text_width, setting_offset_value_text_height, setting_speed_value_text, setting_speed_value_text_width, setting_speed_value_text_height
 
     mouse_clicked = False
-    
+
     for e in event_queue:
         if e[0] == pygame.MOUSEBUTTONDOWN:
             if e[1] == 1:
@@ -1655,7 +1656,7 @@ def draw_setting() -> int:
             elif keybind_change:
                 index = find_key(e[1])
                 if index != -1:
-                    keybind_change_exit(TYPABLE_KEYS[index][1])
+                    keybind_change_exit(TYPEABLE_KEYS[index][1])
 
     screen_draw_temp.fill(COLOR_MENU_BG)
 
@@ -1900,7 +1901,7 @@ def draw_help() -> None:
     screen_draw.blit(screen_draw_temp, (0, 0))
 
     return PAGE_HELP
-    
+
 time.set_timer(EVENT_REPORT_FPS, FPS_POLLING_PERIOD)
 
 settings_file = open("Settings.csv", 'r')
@@ -1938,8 +1939,8 @@ for i in range(EXPLOSION_IMG_COUNT):
     explosion_img.append(image.load("Explosion/%i.png" % (i)).convert_alpha())
 
 explosion_img_width, explosion_img_height = explosion_img[0].get_size()
-explosion_img_height = explosion_img_height * GAME_EXPLOION_IMG_WIDTH // explosion_img_width
-explosion_img_width = GAME_EXPLOION_IMG_WIDTH
+explosion_img_height = explosion_img_height * GAME_EXPLOSION_IMG_WIDTH // explosion_img_width
+explosion_img_width = GAME_EXPLOSION_IMG_WIDTH
 
 for i in range(EXPLOSION_IMG_COUNT):
     explosion_img[i] = transform.smoothscale(explosion_img[i], (explosion_img_width, explosion_img_height))
@@ -2009,14 +2010,14 @@ while True:
 
     screen.blit(screen_draw, (0, 0))
     screen.blit(dip_to_black_mask_surface, (0, 0))
-    
+
     if get_fps:
         fps_display = FONT_FPS.render("FPS %i  |  Frametime %ims" % (timer.get_fps(), timer.get_rawtime()), True, COLOR_FPS).convert_alpha()
         fps_display_width, fps_display_height = fps_display.get_size()
 
     if display_fps:
         screen.blit(fps_display, (SCREEN_SIZE[0]-fps_display_width, SCREEN_SIZE[1]-fps_display_height))
-      
+
     display.flip()
     timer.tick_busy_loop(240)
 
