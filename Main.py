@@ -1904,8 +1904,21 @@ def draw_help() -> None:
 
 time.set_timer(EVENT_REPORT_FPS, FPS_POLLING_PERIOD)
 
+settings_file = open("Settings.csv", 'a')
+settings_file.close()
+
 settings_file = open("Settings.csv", 'r')
-settings_file.readline()
+
+if settings_file.readline() == "":
+    settings_file.close()
+    settings_file = open("Settings.csv", 'w')
+    settings_default_file = open("Settings_default.csv", 'r')
+    settings_file.writelines(settings_default_file.readlines())
+    settings_file.close()
+    settings_default_file.close()
+    settings_file = open("Settings.csv", 'r')
+    settings_file.readline()
+
 settings = settings_file.readline().rstrip().split(',')
 song_volume_percent = int(settings[0])
 if song_volume_percent < 0:
@@ -1922,11 +1935,29 @@ play_hitsound = bool(int(settings[3]))
 display_fps = bool(int(settings[4]))
 keys = settings[5:9]
 settings_file.close()
-save_settings()
 
 scores = []
+scores_file = open("Scores.csv", 'a')
+scores_file.close()
 scores_file = open("Scores.csv", 'r')
-scores_file.readline()
+
+if scores_file.readline() == "":
+    scores_file.close()
+    max_id = 0
+    song_list_file = open("Songs_beginner.csv", 'r', encoding="UTF-8")
+    song_list_file.readline()
+    for line in song_list_file.readlines():
+        scores += [[0, 0]]
+    song_list_file.close()
+    song_list_file = open("Songs_advanced.csv", 'r', encoding="UTF-8")
+    song_list_file.readline()
+    for line in song_list_file.readlines():
+        scores += [[0, 0]]
+    song_list_file.close()
+    save_scores()
+    scores_file = open("Scores.csv", "r")
+    scores_file.readline()
+
 for line in scores_file.readlines():
     line = line.rstrip()
     score_str, accuracy_str = line.split(',')
